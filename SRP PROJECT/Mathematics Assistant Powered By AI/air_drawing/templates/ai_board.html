@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Canvas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ai_board.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="name">
+            <img src="" alt="logo">
+            <h1>Draw & Learn</h1>
+        </div>
+        <div class="info">
+            <a href="http://127.0.0.1:5000/" class="vi">Virtual Draw</a>
+            <a href="http://127.0.0.1:5000/ai_board" class="Av">AI Board</a>
+            <a href="speech_draw.html" class="Speech">Speech</a>
+        </div>
+    </header>
+    <h1>Ai Board</h1>
+    <div class="box">
+        <div class="toolbar">
+            <div>
+                <select id="brush-size">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="15">15px</option>
+                </select>
+            </div>
+
+
+            <input type="color" id="color-picker" value="#000000">
+            <button id="eraser"><i class="fa-solid fa-eraser"></i></button>
+            <button id="clear">Clear Canvas</button>
+            <!-- <button id="download"><i class="fa-solid fa-download"></i> Download Image</button> -->
+            <button id="solve">Solve Problem</button>
+        </div>
+        <canvas id="canvas"  width="1300" height="600"></canvas>
+    </div>
+    <div id="preview-box" style="display: none;">
+        <div id="loading" style="display: none;">
+            Solving... Please wait.
+        </div>
+        <div id="solution-output"></div>
+    </div>
+    
+    
+    <!-- <img id="preview" style="max-width: 100%; border: 1px solid #ccc; display: none;" /> -->
+    <script src="{{ url_for('static', filename='ai_board.js') }}"></script>
+</body>
+</html>
