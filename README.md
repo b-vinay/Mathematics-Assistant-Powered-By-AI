@@ -1,5 +1,4 @@
 📊 Mathematics Assistant Powered By AI
-🧠 1. Introduction
 
 Mathematics Assistant Powered By AI is an AI-based interactive system that allows users to draw mathematical content in the air using hand gestures. Instead of writing on paper or touchscreen, users simply move their hands in front of a webcam, and the system tracks their motion and converts it into digital drawings.
 
